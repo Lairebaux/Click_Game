@@ -40,7 +40,7 @@ for (let j = 0; j < buttonNames.length; j++) {
 }
 
 const contents = () => {
-    // post contents of clicked buttons status
+    // post contents of clicked buttons status - debugger
     clicked_contents_title = createElement("h2", "Contents of clicked")
     addToView(clicked_contents_title)
     clicked_contents = createElement("h3", clicked.toString())
@@ -69,4 +69,4 @@ setTimeout(() => {
     if (won || lost) return 
     lost = true 
     document.getElementById('status').innerText = "You lost!" 
-}, 1000 * buttons.length - 1) 
+}, 600 * buttons.length - 1) 
